@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "PS2 Helper",
+  "description": "Helps you find the details of all PS2 stations at a glance.",
+  "version": "1.0",
+
+  "permissions": [
+    "http://www.bits-pilani.ac.in:12355/*"
+  ],
+
+  "web_accessible_resources": [
+	"css/*","images/*"
+  ],
+  
+  "icons": { "16": "images/bits16.png",
+           "48": "images/bits48.png",
+          "128": "images/bits128.png" },
+		  
+  "content_scripts": [
+    {
+      "matches": ["http://www.bits-pilani.ac.in:12355/problembank*","http://www.bits-pilani.ac.in:12355/problemBank*","http://www.bits-pilani.ac.in:12355/ProblemBank*","http://www.bits-pilani.ac.in:12355/Problembank*"],
+      "js": ["js/jquery.min.js","js/jquery.dataTables.js","js/popup.js","js/TableTools.min.js"]
+    }
+  ]
+
+}
