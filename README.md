@@ -8,4 +8,4 @@ The main page of the web application contains a table with a list of about 400 l
 in a new page and contains more details about each entry. This extension crawls through the table, gets
 the links, fetches the data for each link and populates a table with this data.
 
-The extension also has the ability to export this data into an Excel sheet
+The extension also has the ability to export this data into an Excel sheet using DataTables jquery plugin.
